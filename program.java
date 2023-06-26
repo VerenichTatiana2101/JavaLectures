@@ -166,19 +166,19 @@
 // }
 
 // // Проверка на соответствие получаемого типа
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// public class program {
-// public static void main(String[] args) {
-// Scanner iScanner = new Scanner(System.in);
-// System.out.printf("int a: ");
-// boolean flag = iScanner.hasNextInt(); //true если число может бить инт
-// System.out.println(flag);
-// int i = iScanner.nextInt();
-// System.out.println(i);
-// iScanner.close();
-// }
-// }
+public class program {
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("int a: ");
+        boolean flag = iScanner.hasNextInt(); // true если число может бить инт
+        System.out.println(flag);
+        int i = iScanner.nextInt();
+        System.out.println(i);
+        iScanner.close();
+    }
+}
 
 // // Форматированный вывод
 // public class program {
@@ -366,25 +366,20 @@
 
 // // Вложенные циклы
 // public class program {
-//     public static void main(String[] args) {
-//         for (int i = 0; i < 5; i++) {
-//             for (int j = 0; j < 5; j++) {
-//                 System.out.print("* ");
-//             }
-//             System.out.println();
-//         }
-//         // * * * * *
-//         // * * * * *
-//         // * * * * *
-//         // * * * * *
-//         // * * * * *
-//     }
+// public static void main(String[] args) {
+// for (int i = 0; i < 5; i++) {
+// for (int j = 0; j < 5; j++) {
+// System.out.print("* ");
 // }
-
-
-
-
-
+// System.out.println();
+// }
+// // * * * * *
+// // * * * * *
+// // * * * * *
+// // * * * * *
+// // * * * * *
+// }
+// }
 
 // public class program {
 // public static void main(String[] args) {
