@@ -1,3 +1,5 @@
+import java.io.File;
+
 // public class lecture2 {
 //     public static void main(String[] args) {
 //     String[] name = { "C", "е", "р", "г", "е", "й" };
