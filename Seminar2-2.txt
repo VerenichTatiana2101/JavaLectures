@@ -1,0 +1,7 @@
+.git
+files
+lecture1.java
+lecture2.java
+seminar1.java
+Seminar2-1.txt
+seminar2.java
