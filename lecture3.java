@@ -44,30 +44,30 @@ public class lecture3 {
     // System.out.printf("%d ", i);
     // } // 1 9
     // for (int j : b) {
-    // System.out.printf("%d ", j); //у меня 1 9 1 9 0 !!!
+    // System.out.printf("%d ", j); // у меня 1 9 1 9 0 !!!
     // }
     // // 0 9 0 0 0 0 0 0 0 0
     // }
 
     // // 4.Проблема. Как увеличить размер массива? метод копирования
     // public static void main(String[] args) {
-    // int[] a = new int[] { 0, 9 };
-    // for (int i : a) {
-    // System.out.printf("%d ", i);
-    // }
-    // a = AddItem(a, 2);
-    // a = AddItem(a, 3);
-    // for (int j : a) {
-    // System.out.printf("%d ", j);
-    // }
+    //     int[] a = new int[] { 0, 9 };
+    //     for (int i : a) {
+    //         System.out.printf("%d ", i);
+    //     }
+    //     a = AddItem(a, 2);
+    //     a = AddItem(a, 3);
+    //     for (int j : a) {
+    //         System.out.printf("%d ", j);
+    //     }
     // }
 
     // static int[] AddItem(int[] array, int item) {
-    // int length = array.length;
-    // int[] temp = new int[length + 1];
-    // System.arraycopy(array, 0, temp, 0, length);
-    // temp[length] = item;
-    // return temp;
+    //     int length = array.length;
+    //     int[] temp = new int[length + 1];
+    //     System.arraycopy(array, 0, temp, 0, length);
+    //     temp[length] = item;
+    //     return temp;
     // }
 
     // коллекции ArrayList
@@ -122,12 +122,12 @@ public class lecture3 {
     // }
 
     // public static void main(String[] args) {
-    //     Character value = null;
-    //     List<Character> list1 = List.of('S', 'e', 'r', 'g', 'e', 'y');
-    //     System.out.println(list1);
-    //     list1.remove(1); // java.lang.UnsupportedOperationException
-    //     List<Character> list2 = List.copyOf(list1);
-    //     // not null, immutable
+    // Character value = null;
+    // List<Character> list1 = List.of('S', 'e', 'r', 'g', 'e', 'y');
+    // System.out.println(list1);
+    // list1.remove(1); // java.lang.UnsupportedOperationException
+    // List<Character> list2 = List.copyOf(list1);
+    // // not null, immutable
     // }
 
 }
