@@ -6,7 +6,8 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class seminar2 {
-    public static void main(String[] args) throws SecurityException, IOException {  //SecurityException, IOException добавляется при написании кода
+    public static void main(String[] args) throws SecurityException, IOException { // SecurityException, IOException
+                                                                                   // добавляется при написании кода
         // System.out.printf(longStringBuilding(10, 'a', 'b'));
         // System.out.println(stringCompress("aaaabbbcdd"));
 
@@ -19,12 +20,15 @@ public class seminar2 {
         // System.out.println("Время выполнения: " + duration + " наносекунд");
 
         String pathProject = System.getProperty("user.dir"); // определяем наше расположение
-        // String pathFile1 = pathProject.concat("\\Seminar2-1.txt"); // добавляем недостающий \ и имя файла
-        // testTxtFile(pathFile, testString("TEST ", 10)); // куда и что добавили
+        String pathFile1 = pathProject.concat("\\Seminar2-1.txt"); // добавляем недостающий \ и имя файла
+        testTxtFile(pathFile1, testString("TEST ", 10)); // куда и что добавили
 
+        // String pathFile2 = pathProject.concat("\\Seminar2-2.txt");
+        // addLogFile(pathFile1, showListFils(pathProject));
+        // typeFile(pathFile1, showListFils(pathProject));
 
-        String pathFile2 = pathProject.concat("\\Seminar2-2.txt");
-        addLogFile(pathFile2, showListFils(pathProject));
+        
+        
     }
 
     // Дано четное число N (>0) и символы c1 и c2.
@@ -138,29 +142,30 @@ public class seminar2 {
     }
 
     // Напишите метод, который вернет содержимое текущей папки в виде массива строк.
-    // Напишите метод, который запишет массив, возвращенный предыдущим методом в файл.
+    // Напишите метод, который запишет массив, возвращенный предыдущим методом в
+    // файл.
     // Обработайте ошибки с помощью try-catch конструкции.
     // В случае возникновения исключения, оно должно записаться в лог-файл.
 
-    //метод, который вернет содержимое текущей папки в виде массива строк.
+    // метод, который вернет содержимое текущей папки в виде массива строк.
     static String[] showListFils(String dirPath) throws IOException {
         File currentDir = new File(dirPath);
-        return currentDir.list(); 
+        return currentDir.list();
     }
 
-    //метод, который запишет массив, возвращенный предыдущим методом в файл.
-    static void addLogFile(String filePath, String[] list) throws SecurityException, IOException{ 
+    // метод, который запишет массив, возвращенный предыдущим методом в файл.
+    static void addLogFile(String filePath, String[] list) throws SecurityException, IOException {
         Logger logger = Logger.getLogger(seminar2.class.getName());
         FileHandler fh = new FileHandler("seminar2-3(log).txt");
 
-        logger.addHandler(fh);   //что куда сохр
+        logger.addHandler(fh); // что куда сохр
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
 
-        //отображение логов при возникновении исключений
+        // отображение логов при возникновении исключений
         try {
             File myFile = new File(filePath);
-            FileWriter writer = new FileWriter(myFile); 
+            FileWriter writer = new FileWriter(myFile);
             for (String str : list) {
                 writer.write(str + "\n");
             }
@@ -172,5 +177,5 @@ public class seminar2 {
     }
 
 
-}
 
+}
